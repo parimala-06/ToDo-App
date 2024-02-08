@@ -1,0 +1,167 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  background-color:#ffffff;
+  color: black;
+}
+
+header {
+  background-color: #5affec;
+  margin: auto -16px;
+  padding: 16px 50px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: black;
+  font-family: "McLaren", cursive;
+  font-weight: 500;
+}
+
+.container{
+  margin: 40px auto;
+  max-width: fit-content;
+}
+
+.title{
+  margin: 20px auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.input-holder{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 30px;
+}
+
+input,
+button {
+  padding: 15px 25px;
+  background-color: #9bfef2;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+input {
+  width: 300px;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 15px;
+
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #5affec;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.toDo {
+  background-color: #97fcf0;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon1:hover {
+  cursor: pointer;
+  color: #0b03ff;
+}
+
+.icon2:hover {
+  cursor: pointer;
+  color: #e70137;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0000006c;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: #a2fff4;
+  width: 400px;
+  padding: 10px;
+}
+
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cross:hover {
+  color: #e70137;
+}
+
+.popup h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.popup__input_holder {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.popup__input_holder input,
+.popup__input_holder button {
+  background-color: #d2fffa;
+  color: #000;
+}
+
+.popup__input_holder input::placeholder {
+  color: black;
+}
+
+.popup__input_holder button:hover {
+  background-color: #79fded;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
