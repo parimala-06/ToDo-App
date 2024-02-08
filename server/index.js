@@ -16,12 +16,13 @@ const __dirname = dirname(__filename);
 
 //Middleware
 app.use(express.json());
-app.use(cors());
-//   { 
-//   origin: ['http://localhost:3000', 'https://todo-vite-server.vercel.app'],
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   allowedHeaders: ['Content-Type']
-// }
+app.use(cors(
+  { 
+  origin: ['http://localhost:3000', 'https://todo-vite-mauve.vercel.app'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}
+));
 
 app.use("/api", router);
 
